@@ -23,14 +23,11 @@ Rantai Markov (Markov Chain) adalah sebuah teknik perhitungan yang umumnya digun
 [Source](https://socs.binus.ac.id/2013/06/30/markov-chain/)
 
 ## 📌**Study Case**
-### **User Retention Analysis for a Mobile App**
+### **Markov Chain untuk kasus harian COVID-19**
 
 ### 📒 Deskripsi Masalah:
 
-
 ### 📒 Data dan Variabel:
-perusahaan ini telah mengumpulkan dataset yang berisi kumpulan data 
-- **InvoiceNo**: angka unik pada setiap pembelian 
 
 ### 📒 Tujuan:
 
@@ -44,8 +41,18 @@ perusahaan ini telah mengumpulkan dataset yang berisi kumpulan data
 ### 📒**menggunakan R/RStudio**
 
 ## 📌**Dataset**
-### **E-Commerce UK (5 data teratas)**
-
+### **Data Harian COVID-19 (10 data teratas)**
+|Tanggal|Mijen|Semarang Tengah|Candisari|Gajah Mungkur|Tugu|Semarang Selatan|Gunungpati|Semarang Barat|Genuk|Ngaliyan|Banyumanik|Semarang Utara|Tembalang|Semarang Timur|Pedurungan|Gayam Sari|
+|:----|:----|:----|:----|:----|:----|:----|:----|:----|:----|:----|:----|:----|:----|:----|:----|:----|
+|6/02/2020|turun|naik|turun|turun|turun|turun|turun|turun|turun|turun|turun|turun|naik|turun|turun|turun|
+|6/03/2020|turun|turun|naik|turun|turun|naik|turun|turun|turun|turun|naik|turun|turun|naik|turun|naik|
+|6/04/2020|turun|turun|naik|naik|turun|naik|naik|naik|turun|naik|naik|naik|naik|turun|naik|naik|
+|6/05/2020|turun|turun|turun|turun|turun|naik|turun|turun|turun|turun|turun|turun|turun|turun|turun|turun|
+|6/06/2020|turun|naik|naik|naik|naik|naik|naik|naik|naik|naik|naik|turun|naik|turun|naik|turun|
+|6/07/2020|turun|turun|naik|turun|turun|turun|naik|turun|naik|turun|turun|turun|naik|turun|naik|turun|
+|6/08/2020|turun|naik|naik|naik|naik|naik|naik|naik|naik|naik|naik|naik|naik|naik|naik|naik|
+|6/09/2020|turun|turun|turun|naik|turun|turun|turun|naik|turun|turun|turun|naik|turun|turun|naik|turun|
+|6/10/2020|turun|turun|turun|turun|turun|turun|turun|turun|turun|turun|turun|turun|turun|naik|turun|turun|
 
 
 ## 📌**Links**
