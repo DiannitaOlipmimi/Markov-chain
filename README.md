@@ -28,6 +28,24 @@ Rantai Markov (Markov Chain) adalah sebuah teknik perhitungan yang umumnya digun
 ### 📒 Deskripsi Masalah:
 
 ### 📒 Data dan Variabel:
+data yang diambil merupakan data asli kenaikan dan penurunan yang terjadi di 16 kabupaten di kota Semarang, Jawa Tengah
+- Tanggal: waktu harian selama Februri 2020 hingga Desember 2020
+- Miijen
+- Semarang Tengah
+- Candisari
+- Gajah Mungkur
+- Tugu
+- Semarang Selatan
+- Gunungpati
+- Semarang Barat
+- Genuk
+- Ngaliyan
+- Banyumanik
+- Semarang Utara
+- Tembalang
+- Semarang Timur
+- Pedurungan
+- Gayam Sari 
 
 ### 📒 Tujuan:
 
