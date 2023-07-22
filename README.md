@@ -37,6 +37,32 @@ Rantai Markov (Markov Chain) adalah sebuah teknik perhitungan yang umumnya digun
 ## 📌**Step by step analysis**
 ### 📒 **menggunakan R/RStudio**
 
+```R
+#rantai markov dengan function
+rantai_markov=function(data){
+  library(markovchain)
+  na.sequence=createSequenceMatrix(data, sanitize = FALSE)
+  data.seq=as.matrix(na.sequenceMatr)
+  prob=data.seq/rowSums(data.seq)
+  status=c("naik", "turun")
+  MCdata=new("markovchain", states = status, byrow = TRUE,
+             transitionMatrix = prob)
+  steady=steadyStates(MCdata)
+  
+  seq_mat=as.data.frame(na.sequence)
+  prob_mat=as.data.frame(prob)
+  st_mat=as.data.frame(steady)
+  
+  cat("\t","Matriks Rantai Markov","\n","\n")
+  cat("matriks frekuensi","\n")
+  print(seq_mat)
+  cat("\n","matriks probabilitas transisi","\n")
+  print(prob_mat)
+  cat("\n","matriks steady state","\n")
+  print(st_mat)
+}
+```
+
 ## 📌**Result**
 ### 📒**menggunakan R/RStudio**
 
