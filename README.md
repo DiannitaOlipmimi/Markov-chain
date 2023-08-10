@@ -1,16 +1,7 @@
-# markov-chain
-Menghitung rantai markov secara manual dan membuat functionnya (menggunakan data harian Covid-19 per kecamatan di Kota Semarang)
+# Merkov-Chain untuk Memperkirakan penaikan/penurunan kasus COVID-19
 
-## 📌Table of contents
-- [Definisi](https://github.com/DiannitaOlipmimi/markov-chain#table-of-contents)
-- [Study Case](https://github.com/DiannitaOlipmimi/markov-chain#study-case)
-- [Step by Step analysis](https://github.com/DiannitaOlipmimi/markov-chain#step-by-step-analysis)
-- [Result](https://github.com/DiannitaOlipmimi/markov-chain#result)
-- [Dataset](https://github.com/DiannitaOlipmimi/markov-chain#dataset)
-- [Links](https://github.com/DiannitaOlipmimi/markov-chain#links)
+⛳ Deskripsi Masalah
 
-## 📌**Definisi**
-### 📒Markov Chain
 Perubahan yang ada di dalam kehidupan sehari-hari sangat bervariasi. Ada perubahan yang bersifat statis namun ada juga yang bersifat dinamis. Karena kehidupan yang terus berjalan, maka perubahan yang terjadi memang tidak bisa dihindari. Acapkali perubahan itu juga berimbas pada sebuah kerugian. Oleh karena itu, ada baiknya apabila dilakukan persiapan untuk sebuah perubahan. Bagaimana caranya untuk menghadapi sebuah perubahan? Setiap transisi yang terjadi dari waktu ke waktu perlu dicermati dengan baik. Salah satu solusi yang relevan untuk situasi tersebut adalah dengan melakukan prediksi akan apa yang terjadi di masa yang akan datang.
 
 Contoh perubahan:
@@ -20,12 +11,13 @@ Contoh perubahan:
 
 Rantai Markov (Markov Chain) adalah sebuah teknik perhitungan yang umumnya digunakan dalam melakukan pemodelan bermacam-macam kondisi. Teknik ini digunakan untuk membantu dalam memperkirakan perubahan yang mungkin terjadi di masa mendatang. Perubahan-perubahan tersebut diwakili dalam variabel-variabel dinamis di waktu-waktu tertentu. Sehingga perlu untuk menyimpan nilai dari variabel keadaan pada tiap-tiap waktu tertentu itu
 
-[Source](https://socs.binus.ac.id/2013/06/30/markov-chain/)
+Menghitung rantai markov secara manual dan membuat functionnya (menggunakan data harian Covid-19 per kecamatan di Kota Semarang)
 
-## 📌**Study Case**
-### **Markov Chain untuk kasus harian COVID-19**
+## 📌Table of contents
+- [Dataset dan Variabel](https://github.com/DiannitaOlipmimi/markov-chain#step-by-step-analysis)
+- [Result](https://github.com/DiannitaOlipmimi/markov-chain#result)
+- [Links](https://github.com/DiannitaOlipmimi/markov-chain#links)
 
-### 📒 Deskripsi Masalah:
 
 ### 📒 Data dan Variabel:
 data yang diambil merupakan data asli kenaikan dan penurunan yang terjadi di 16 kabupaten di kota Semarang, Jawa Tengah
