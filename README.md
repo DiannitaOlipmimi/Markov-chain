@@ -1,6 +1,6 @@
 # Merkov-Chain untuk Memperkirakan penaikan/penurunan kasus COVID-19
 
-⛳ Deskripsi Masalah
+**⛳ Deskripsi Masalah**
 
 Perubahan yang ada di dalam kehidupan sehari-hari sangat bervariasi. Ada perubahan yang bersifat statis namun ada juga yang bersifat dinamis. Karena kehidupan yang terus berjalan, maka perubahan yang terjadi memang tidak bisa dihindari. Acapkali perubahan itu juga berimbas pada sebuah kerugian. Oleh karena itu, ada baiknya apabila dilakukan persiapan untuk sebuah perubahan. Bagaimana caranya untuk menghadapi sebuah perubahan? Setiap transisi yang terjadi dari waktu ke waktu perlu dicermati dengan baik. Salah satu solusi yang relevan untuk situasi tersebut adalah dengan melakukan prediksi akan apa yang terjadi di masa yang akan datang.
 
@@ -13,13 +13,31 @@ Rantai Markov (Markov Chain) adalah sebuah teknik perhitungan yang umumnya digun
 
 Menghitung rantai markov secara manual dan membuat functionnya (menggunakan data harian Covid-19 per kecamatan di Kota Semarang)
 
+**⛳ Tujuan**
+
+
+
 ## 📌Table of contents
 - [Dataset dan Variabel](https://github.com/DiannitaOlipmimi/markov-chain#step-by-step-analysis)
 - [Result](https://github.com/DiannitaOlipmimi/markov-chain#result)
 - [Links](https://github.com/DiannitaOlipmimi/markov-chain#links)
 
+## 🧵 Dataset dan Variabel
 
-### 📒 Data dan Variabel:
+**📒 Dataset:**
+
+**Data Harian COVID-19 (10 data teratas)**
+
+|Tanggal|Mijen|Semarang Tengah|Candisari|Gajah Mungkur|Tugu|Semarang Selatan|Gunungpati|Semarang Barat|Genuk|Ngaliyan|Banyumanik|Semarang Utara|Tembalang|Semarang Timur|Pedurungan|Gayam Sari|
+|:----|:----|:----|:----|:----|:----|:----|:----|:----|:----|:----|:----|:----|:----|:----|:----|:----|
+|6/02/2020|turun|naik|turun|turun|turun|turun|turun|turun|turun|turun|turun|turun|naik|turun|turun|turun|
+|6/03/2020|turun|turun|naik|turun|turun|naik|turun|turun|turun|turun|naik|turun|turun|naik|turun|naik|
+|6/04/2020|turun|turun|naik|naik|turun|naik|naik|naik|turun|naik|naik|naik|naik|turun|naik|naik|
+|6/05/2020|turun|turun|turun|turun|turun|naik|turun|turun|turun|turun|turun|turun|turun|turun|turun|turun|
+|6/06/2020|turun|naik|naik|naik|naik|naik|naik|naik|naik|naik|naik|turun|naik|turun|naik|turun|
+
+**📒Variabel:**
+
 data yang diambil merupakan data asli kenaikan dan penurunan yang terjadi di 16 kabupaten di kota Semarang, Jawa Tengah
 - **Tanggal**: waktu harian selama Februri 2020 hingga Desember 2020
 - **Miijen**
@@ -39,13 +57,11 @@ data yang diambil merupakan data asli kenaikan dan penurunan yang terjadi di 16 
 - **Pedurungan**
 - **Gayam Sari** 
 
-### 📒 Tujuan:
+## 🧵**Result**
 
-### 📒 Langkah Analisis:
+** 📒 Langkah Analisis:**
+
 ✅ *Exploratory Data Analysis* (EDA):
-
-## 📌**Step by step analysis**
-### 📒 **menggunakan R/RStudio**
 
 ```R
 #rantai markov dengan function
@@ -73,22 +89,5 @@ rantai_markov=function(data){
 }
 ```
 
-## 📌**Result**
-### 📒**menggunakan R/RStudio**
 
-## 📌**Dataset**
-### **Data Harian COVID-19 (10 data teratas)**
-|Tanggal|Mijen|Semarang Tengah|Candisari|Gajah Mungkur|Tugu|Semarang Selatan|Gunungpati|Semarang Barat|Genuk|Ngaliyan|Banyumanik|Semarang Utara|Tembalang|Semarang Timur|Pedurungan|Gayam Sari|
-|:----|:----|:----|:----|:----|:----|:----|:----|:----|:----|:----|:----|:----|:----|:----|:----|:----|
-|6/02/2020|turun|naik|turun|turun|turun|turun|turun|turun|turun|turun|turun|turun|naik|turun|turun|turun|
-|6/03/2020|turun|turun|naik|turun|turun|naik|turun|turun|turun|turun|naik|turun|turun|naik|turun|naik|
-|6/04/2020|turun|turun|naik|naik|turun|naik|naik|naik|turun|naik|naik|naik|naik|turun|naik|naik|
-|6/05/2020|turun|turun|turun|turun|turun|naik|turun|turun|turun|turun|turun|turun|turun|turun|turun|turun|
-|6/06/2020|turun|naik|naik|naik|naik|naik|naik|naik|naik|naik|naik|turun|naik|turun|naik|turun|
-|6/07/2020|turun|turun|naik|turun|turun|turun|naik|turun|naik|turun|turun|turun|naik|turun|naik|turun|
-|6/08/2020|turun|naik|naik|naik|naik|naik|naik|naik|naik|naik|naik|naik|naik|naik|naik|naik|
-|6/09/2020|turun|turun|turun|naik|turun|turun|turun|naik|turun|turun|turun|naik|turun|turun|naik|turun|
-|6/10/2020|turun|turun|turun|turun|turun|turun|turun|turun|turun|turun|turun|turun|turun|naik|turun|turun|
-
-
-## 📌**Links**
+## 🧵**Links**
