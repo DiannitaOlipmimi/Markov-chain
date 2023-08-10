@@ -39,23 +39,23 @@ Menghitung rantai markov secara manual dan membuat functionnya (menggunakan data
 **📒Variabel:**
 
 data yang diambil merupakan data asli kenaikan dan penurunan yang terjadi di 16 kabupaten di kota Semarang, Jawa Tengah
-- **Tanggal**: waktu harian selama Februri 2020 hingga Desember 2020
-- **Miijen**
-- **Semarang Tengah**
-- **Candisari**
-- **Gajah Mungkur**
-- **Tugu**
-- **Semarang Selatan**
-- **Gunungpati**
-- **Semarang Barat**
-- **Genuk**
-- **Ngaliyan**
-- **Banyumanik**
-- **Semarang Utara**
-- **Tembalang**
-- **Semarang Timur**
-- **Pedurungan**
-- **Gayam Sari** 
+- `Tanggal`: waktu harian selama Februri 2020 hingga Desember 2020
+- `Miijen`
+- `Semarang Tengah`
+- `Candisari`
+- `Gajah Mungkur`
+- `Tugu`
+- `Semarang Selatan`
+- `Gunungpati`
+- `Semarang Barat`
+- `Genuk`
+- `Ngaliyan`
+- `Banyumanik`
+- `Semarang Utara`
+- `Tembalang`
+- `Semarang Timur`
+- `Pedurungan`
+- `Gayam Sari*`
 
 ## 🧵**Result**
 
@@ -91,3 +91,11 @@ rantai_markov=function(data){
 
 
 ## 🧵**Links**
+
+📊 Kasus COVID-19 Kota Semarang
+
+https://siagacorona.semarangkota.go.id/
+
+📊 PPID Kominfo Jateng
+
+https://ppid.semarangkota.go.id/peta-sebaran-virus-corona-covid-19-di-kota-semarang/ 
