@@ -1,4 +1,4 @@
-# Merkov-Chain untuk Memperkirakan penaikan/penurunan kasus COVID-19
+# Merkov-Chain untuk Memperkirakan Kenaikan/penurunan Kasus COVID-19
 
 **⛳ Deskripsi Masalah**
 
