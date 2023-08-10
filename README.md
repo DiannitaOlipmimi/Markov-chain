@@ -15,7 +15,7 @@ Menghitung rantai markov secara manual dan membuat functionnya (menggunakan data
 
 **⛳ Tujuan**
 
-
+memprediksi status COVID-19 di Kota Semarang berdasarkan data yang ada
 
 ## 📌Table of contents
 - [Dataset dan Variabel](https://github.com/DiannitaOlipmimi/markov-chain#step-by-step-analysis)
@@ -59,9 +59,44 @@ data yang diambil merupakan data asli kenaikan dan penurunan yang terjadi di 16 
 
 ## 🧵**Result**
 
-** 📒 Langkah Analisis:**
+**📒 Langkah Analisis:**
 
 ✅ *Exploratory Data Analysis* (EDA):
+
+✅ Step 1: Define States
+
+Identify the distinct states or conditions that the system can be in. For example, if you're analyzing the weather, states could be "Sunny," "Cloudy," and "Rainy."
+
+✅ Step 2: Create the Transition Matrix
+
+The transition matrix is the core of a Markov Chain. It shows the probabilities of moving from one state to another. The rows represent the current state, and the columns represent the next state.
+
+For each state, calculate the probability of transitioning to each other state. These probabilities should add up to 1 for each row.
+
+✅ Step 3: Initial State Probabilities
+
+Define the initial probabilities for each state. This represents the starting point of your Markov Chain. These initial probabilities also should add up to 1.
+
+✅ Step 4: Analysis
+
+Steady-State Distribution: If you're interested in a long-term analysis, calculate the steady-state distribution. This represents the long-term probabilities of being in each state. It's the result of iteratively applying the transition matrix until the probabilities stabilize.
+
+N-Step Transition Probabilities: Calculate the probabilities of moving from one state to another in exactly N steps. This can help you understand how the system evolves over time.
+
+✅ Step 5: Visualization
+
+Transition Diagram: Create a diagram to visualize the transitions between states. Nodes represent states, and arrows represent transitions with associated probabilities.
+
+Steady-State Distribution Plot: Plot the steady-state probabilities for each state. This gives you a clear view of the long-term behavior of the system.
+
+✅ Step 6: Interpretation
+
+Analyze the results to draw insights about the behavior of the system. For instance, if you're modeling a customer's buying behavior, the analysis might reveal the probability of a customer switching from buying one product to another over time.
+
+✅ Step 7: Validation and Refinement
+
+Test the accuracy of your Markov Chain by comparing its predictions to real-world data or established theories. If needed, refine the model based on the discrepancies you find.
+Remember, this is a basic guide. Depending on the complexity of your system and the analysis you're performing, the steps may vary. Markov Chain Analysis can be more complex, involving higher-order chains, absorbing states, and other variations. It's a powerful tool but can also be intricate, so it's important to have a solid understanding of probability and matrix operations.
 
 ```R
 #rantai markov dengan function
@@ -88,7 +123,6 @@ rantai_markov=function(data){
   print(st_mat)
 }
 ```
-
 
 ## 🧵**Links**
 
